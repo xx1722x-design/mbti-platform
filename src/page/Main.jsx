@@ -9,21 +9,24 @@ function Main() {
   const [selectedLang, setSelectedLang] = useState('all');
 
   const categories = [
-    { id: 'all', name: '전체', icon: '🌟' },
-    { id: 'characteristic', name: '성격', icon: '🧠' },
-    { id: 'love', name: '연애', icon: '💕' },
-    { id: 'aiSimulation', name: 'AI 시뮬레이션', icon: '🤖' },
-    { id: 'sajuPlus', name: '사주플러스', icon: '🔮' },
-    { id: 'digitalBook', name: '디지털북', icon: '📚' },
-    { id: 'promotion', name: '프로모션', icon: '🎁' },
-    { id: 'etc', name: '기타', icon: '✨' }
+    { id: 'all', name: 'All', icon: '🌟' },
+    { id: 'personality', name: 'Personality', icon: '🧠' },
+    { id: 'love', name: 'Love & Dating', icon: '💕' },
+    { id: 'career', name: 'Career', icon: '💼' },
+    { id: 'lifestyle', name: 'Lifestyle', icon: '🏠' },
+    { id: 'health', name: 'Health & Wellness', icon: '💪' },
+    { id: 'entertainment', name: 'Entertainment', icon: '🎮' },
+    { id: 'ai', name: 'AI & Tech', icon: '🤖' }
   ];
 
   const languages = [
-    { id: 'all', name: '전체', flag: '🌍' },
-    { id: 'Kor', name: '한국어', flag: '🇰🇷' },
+    { id: 'all', name: 'All', flag: '🌍' },
     { id: 'Eng', name: 'English', flag: '🇺🇸' },
-    { id: 'JP', name: '日本語', flag: '🇯🇵' }
+    { id: 'Kor', name: '한국어', flag: '🇰🇷' },
+    { id: 'JP', name: '日本語', flag: '🇯🇵' },
+    { id: 'ES', name: 'Español', flag: '🇪🇸' },
+    { id: 'FR', name: 'Français', flag: '🇫🇷' },
+    { id: 'DE', name: 'Deutsch', flag: '🇩🇪' }
   ];
 
   const filteredTests = TESTS.filter(test => {
@@ -146,26 +149,26 @@ function Main() {
           textAlign: 'center', 
           marginBottom: '50px'
         }}>
-          <h1 style={{ 
-            fontSize: '3.5rem', 
-            fontWeight: 'bold', 
-            color: '#333',
-            marginBottom: '20px',
-            background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent',
-            backgroundClip: 'text'
-          }}>
-            K-TEST
-          </h1>
-          <p style={{ 
-            fontSize: '1.4rem', 
-            color: '#666',
-            marginBottom: '40px',
-            fontWeight: '300'
-          }}>
-            나를 알아가는 재미있는 심리테스트
-          </p>
+            <h1 style={{
+              fontSize: '3.5rem',
+              fontWeight: 'bold',
+              color: '#333',
+              marginBottom: '20px',
+              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text'
+            }}>
+              PSYCHOLOGY TEST
+            </h1>
+            <p style={{
+              fontSize: '1.4rem',
+              color: '#666',
+              marginBottom: '40px',
+              fontWeight: '300'
+            }}>
+              Discover Your True Self with Fun Psychology Tests
+            </p>
           
           {/* 카테고리 필터 */}
           <div style={{ 

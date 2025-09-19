@@ -861,58 +861,226 @@ export const TESTS = [
     ],
   },
   
-  // 연애 테스트 추가
+  // 영어권 테스트 추가
   {
     info: {
-      mainTitle: "연애 스타일 테스트",
-      subTitle: "나의 연애 유형은 무엇일까?",
-      mainUrl: "loveStyle",
-      scoreType: "연애유형",
-      mainImage: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&h=600&fit=crop",
-      thumbImage: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400&h=300&fit=crop",
-      lang: "Kor",
-      category: "love",
+      mainTitle: "MBTI Personality Test",
+      subTitle: "Discover your true personality type",
+      mainUrl: "mbtiTest",
+      scoreType: "MBTI",
+      mainImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop",
+      thumbImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+      lang: "Eng",
+      category: "personality",
     },
     questions: [
       {
-        which: "LOVE",
-        question: "데이트할 때 나는?",
+        which: "MBTI",
+        question: "At a party, you prefer to:",
         answers: [
           {
-            type: "A",
-            content: "계획적으로 미리 준비한다.",
+            type: "E",
+            content: "Meet new people and socialize",
           },
           {
-            type: "B",
-            content: "즉흥적으로 그때그때 결정한다.",
+            type: "I",
+            content: "Have deep conversations with close friends",
           },
         ],
       },
       {
-        which: "LOVE",
-        question: "연인과의 갈등이 생겼을 때 나는?",
+        which: "MBTI",
+        question: "When making decisions, you rely more on:",
         answers: [
           {
-            type: "A",
-            content: "바로 대화해서 해결하려고 한다.",
+            type: "T",
+            content: "Logic and objective analysis",
           },
           {
-            type: "B",
-            content: "시간을 두고 서서히 해결한다.",
+            type: "F",
+            content: "Values and how it affects people",
           },
         ],
       },
     ],
     results: [
       {
-        type: "열정적 연애형",
-        query: "열정적",
+        type: "ENFP",
+        query: "ENFP",
+        img_src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+      },
+      {
+        type: "INTJ",
+        query: "INTJ",
+        img_src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+      },
+    ],
+  },
+
+  // 연애 테스트 추가
+  {
+    info: {
+      mainTitle: "Love Style Test",
+      subTitle: "What's your dating personality?",
+      mainUrl: "loveStyle",
+      scoreType: "Love Type",
+      mainImage: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&h=600&fit=crop",
+      thumbImage: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400&h=300&fit=crop",
+      lang: "Eng",
+      category: "love",
+    },
+    questions: [
+      {
+        which: "LOVE",
+        question: "On a date, you prefer to:",
+        answers: [
+          {
+            type: "A",
+            content: "Plan everything in advance",
+          },
+          {
+            type: "B",
+            content: "Go with the flow and be spontaneous",
+          },
+        ],
+      },
+      {
+        which: "LOVE",
+        question: "When you have a conflict with your partner, you:",
+        answers: [
+          {
+            type: "A",
+            content: "Talk it out immediately",
+          },
+          {
+            type: "B",
+            content: "Take time to think before discussing",
+          },
+        ],
+      },
+    ],
+    results: [
+      {
+        type: "Passionate Lover",
+        query: "Passionate",
         img_src: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400&h=400&fit=crop",
       },
       {
-        type: "안정적 연애형",
-        query: "안정적",
+        type: "Stable Partner",
+        query: "Stable",
         img_src: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400&h=400&fit=crop",
+      },
+    ],
+  },
+
+  // Career Test
+  {
+    info: {
+      mainTitle: "Career Personality Test",
+      subTitle: "Find your perfect career path",
+      mainUrl: "careerTest",
+      scoreType: "Career Type",
+      mainImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop",
+      thumbImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+      lang: "Eng",
+      category: "career",
+    },
+    questions: [
+      {
+        which: "CAREER",
+        question: "What motivates you most at work?",
+        answers: [
+          {
+            type: "A",
+            content: "Helping others and making a difference",
+          },
+          {
+            type: "B",
+            content: "Solving complex problems and challenges",
+          },
+        ],
+      },
+      {
+        which: "CAREER",
+        question: "You prefer working:",
+        answers: [
+          {
+            type: "A",
+            content: "In a team with others",
+          },
+          {
+            type: "B",
+            content: "Independently on your own",
+          },
+        ],
+      },
+    ],
+    results: [
+      {
+        type: "Social Worker",
+        query: "Social",
+        img_src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+      },
+      {
+        type: "Analyst",
+        query: "Analyst",
+        img_src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+      },
+    ],
+  },
+
+  // Health & Wellness Test
+  {
+    info: {
+      mainTitle: "Wellness Lifestyle Test",
+      subTitle: "Discover your ideal wellness routine",
+      mainUrl: "wellnessTest",
+      scoreType: "Wellness Type",
+      mainImage: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop",
+      thumbImage: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
+      lang: "Eng",
+      category: "health",
+    },
+    questions: [
+      {
+        which: "WELLNESS",
+        question: "Your ideal morning routine includes:",
+        answers: [
+          {
+            type: "A",
+            content: "Meditation and yoga",
+          },
+          {
+            type: "B",
+            content: "High-intensity workout",
+          },
+        ],
+      },
+      {
+        which: "WELLNESS",
+        question: "When stressed, you prefer to:",
+        answers: [
+          {
+            type: "A",
+            content: "Take a walk in nature",
+          },
+          {
+            type: "B",
+            content: "Hit the gym hard",
+          },
+        ],
+      },
+    ],
+    results: [
+      {
+        type: "Mindful Wellness",
+        query: "Mindful",
+        img_src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop",
+      },
+      {
+        type: "Active Wellness",
+        query: "Active",
+        img_src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=400&fit=crop",
       },
     ],
   },
@@ -920,14 +1088,14 @@ export const TESTS = [
   // AI 시뮬레이션 테스트
   {
     info: {
-      mainTitle: "AI와의 궁합 테스트",
-      subTitle: "어떤 AI와 가장 잘 맞을까?",
+      mainTitle: "AI Compatibility Test",
+      subTitle: "Which AI personality matches yours?",
       mainUrl: "aiCompatibility",
-      scoreType: "AI유형",
+      scoreType: "AI Type",
       mainImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
       thumbImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop",
-      lang: "Kor",
-      category: "aiSimulation",
+      lang: "Eng",
+      category: "ai",
     },
     questions: [
       {
