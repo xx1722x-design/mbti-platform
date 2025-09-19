@@ -128,8 +128,44 @@ function AdBanner({ position = 'top', size = 'banner' }) {
         height: '100%',
         zIndex: 1
       }}>
-        {/* Google AdSense, 네이버 애드포스트 등 광고 코드 삽입 */}
-        {/* 예시: <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> */}
+        {/* Google AdSense 광고 코드 */}
+        {size === 'banner' && (
+          <ins 
+            className="adsbygoogle"
+            style={{ display: 'block' }}
+            data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+            data-ad-slot="XXXXXXXXXX"
+            data-ad-format="auto"
+            data-full-width-responsive="true"
+          ></ins>
+        )}
+        {size === 'rectangle' && (
+          <ins 
+            className="adsbygoogle"
+            style={{ display: 'block' }}
+            data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+            data-ad-slot="XXXXXXXXXX"
+            data-ad-format="rectangle"
+          ></ins>
+        )}
+        {size === 'square' && (
+          <ins 
+            className="adsbygoogle"
+            style={{ display: 'block' }}
+            data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+            data-ad-slot="XXXXXXXXXX"
+            data-ad-format="square"
+          ></ins>
+        )}
+        {size === 'leaderboard' && (
+          <ins 
+            className="adsbygoogle"
+            style={{ display: 'block' }}
+            data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+            data-ad-slot="XXXXXXXXXX"
+            data-ad-format="horizontal"
+          ></ins>
+        )}
       </div>
     </div>
   );
