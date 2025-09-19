@@ -860,6 +860,173 @@ export const TESTS = [
       },
     ],
   },
+  
+  // 연애 테스트 추가
+  {
+    info: {
+      mainTitle: "연애 스타일 테스트",
+      subTitle: "나의 연애 유형은 무엇일까?",
+      mainUrl: "loveStyle",
+      scoreType: "연애유형",
+      mainImage: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800&h=600&fit=crop",
+      thumbImage: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400&h=300&fit=crop",
+      lang: "Kor",
+      category: "love",
+    },
+    questions: [
+      {
+        which: "LOVE",
+        question: "데이트할 때 나는?",
+        answers: [
+          {
+            type: "A",
+            content: "계획적으로 미리 준비한다.",
+          },
+          {
+            type: "B",
+            content: "즉흥적으로 그때그때 결정한다.",
+          },
+        ],
+      },
+      {
+        which: "LOVE",
+        question: "연인과의 갈등이 생겼을 때 나는?",
+        answers: [
+          {
+            type: "A",
+            content: "바로 대화해서 해결하려고 한다.",
+          },
+          {
+            type: "B",
+            content: "시간을 두고 서서히 해결한다.",
+          },
+        ],
+      },
+    ],
+    results: [
+      {
+        type: "열정적 연애형",
+        query: "열정적",
+        img_src: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400&h=400&fit=crop",
+      },
+      {
+        type: "안정적 연애형",
+        query: "안정적",
+        img_src: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400&h=400&fit=crop",
+      },
+    ],
+  },
+
+  // AI 시뮬레이션 테스트
+  {
+    info: {
+      mainTitle: "AI와의 궁합 테스트",
+      subTitle: "어떤 AI와 가장 잘 맞을까?",
+      mainUrl: "aiCompatibility",
+      scoreType: "AI유형",
+      mainImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=600&fit=crop",
+      thumbImage: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop",
+      lang: "Kor",
+      category: "aiSimulation",
+    },
+    questions: [
+      {
+        which: "AI",
+        question: "AI에게 가장 중요한 것은?",
+        answers: [
+          {
+            type: "A",
+            content: "정확성과 논리성",
+          },
+          {
+            type: "B",
+            content: "창의성과 감성",
+          },
+        ],
+      },
+    ],
+    results: [
+      {
+        type: "논리형 AI",
+        query: "논리형",
+        img_src: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=400&fit=crop",
+      },
+    ],
+  },
+
+  // 사주플러스 테스트
+  {
+    info: {
+      mainTitle: "나의 운세 테스트",
+      subTitle: "오늘의 운세는 어떨까?",
+      mainUrl: "fortune",
+      scoreType: "운세",
+      mainImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=600&fit=crop",
+      thumbImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+      lang: "Kor",
+      category: "sajuPlus",
+    },
+    questions: [
+      {
+        which: "FORTUNE",
+        question: "오늘 기분은 어떠신가요?",
+        answers: [
+          {
+            type: "A",
+            content: "매우 좋다",
+          },
+          {
+            type: "B",
+            content: "보통이다",
+          },
+        ],
+      },
+    ],
+    results: [
+      {
+        type: "대길",
+        query: "대길",
+        img_src: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+      },
+    ],
+  },
+
+  // 프로모션 테스트
+  {
+    info: {
+      mainTitle: "특별 이벤트 테스트",
+      subTitle: "한정판 테스트에 참여하세요!",
+      mainUrl: "specialEvent",
+      scoreType: "이벤트",
+      mainImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+      thumbImage: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
+      lang: "Kor",
+      category: "promotion",
+    },
+    questions: [
+      {
+        which: "EVENT",
+        question: "어떤 이벤트를 선호하시나요?",
+        answers: [
+          {
+            type: "A",
+            content: "할인 이벤트",
+          },
+          {
+            type: "B",
+            content: "경품 이벤트",
+          },
+        ],
+      },
+    ],
+    results: [
+      {
+        type: "이벤트 당첨",
+        query: "당첨",
+        img_src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=400&fit=crop",
+      },
+    ],
+  },
 ];
 
 // mbti.com
